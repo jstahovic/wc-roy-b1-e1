@@ -6,7 +6,7 @@
     "makepretty": "prettier '**/*.ts' --write",
     "start": "npm run makepretty && ng serve --port 5000",
     "build": "npm run makepretty && ng build --output-hashing=none",
-    "build:elements": "ng build --prod --output-hashing none && node build-elements.js",
+    "build:elements": "ng build --prod --output-hashing=none && node build-elements.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

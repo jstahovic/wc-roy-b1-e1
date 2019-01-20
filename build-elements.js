@@ -6,6 +6,8 @@ const concat = require('concat')
     './dist/wc-roy-b1-e1/polyfills.js',
     './dist/wc-roy-b1-e1/scripts.js',
     './dist/wc-roy-b1-e1/main.js',
+    './dist/wc-roy-b1-e1/main.js',
+    './dist/wc-roy-b1-e1/4.js',
   ]
 
   await fs.ensureDir('elements')
