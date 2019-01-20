@@ -6,6 +6,7 @@
     "makepretty": "prettier '**/*.ts' --write",
     "start": "npm run makepretty && ng serve --port 5000",
     "build": "npm run makepretty && ng build --output-hashing=none",
+    "build:elements": "ng build --prod --output-hashing none && node build-elements.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -22,10 +23,11 @@
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
     "core-js": "^2.5.4",
+    "document-register-element": "^1.7.2",
+    "http-server": "^0.11.1",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
-    "zone.js": "~0.8.26",
-    "document-register-element": "^1.7.2"
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.12.0",
@@ -36,6 +38,8 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "concat": "^1.0.3",
+    "fs-extra": "^7.0.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.1.1",

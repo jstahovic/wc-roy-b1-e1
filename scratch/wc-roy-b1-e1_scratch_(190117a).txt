@@ -31,3 +31,11 @@ npx ng g m red --routing
 npx ng g c red/light-red -m red
 npx ng g c red/medium-red -m red
 npx ng g c red/dark-red -m red
+
+npx ng add @angular/elements --name=wc-roy-b1-e1
+
+npm install --save-dev concat fs-extra
+
+npm run build:elements
+
+npm install http-server
