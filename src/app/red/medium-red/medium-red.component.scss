@@ -1,4 +1,19 @@
-.component-background {
-  background-color: firebrick;
-  color: white;
+.container {
+	height: 100%;
+  min-height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	.content {
+		text-align: center;
+		color: white;
+		padding: 20px;
+
+		display: flex;
+		flex-direction: column;
+    justify-content: center;
+    background-color: firebrick;
+    color: white;
+		flex: 1;
+	}
 }
