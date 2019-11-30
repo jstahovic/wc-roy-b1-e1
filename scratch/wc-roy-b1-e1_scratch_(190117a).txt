@@ -39,3 +39,7 @@ npm install --save-dev concat fs-extra
 npm run build:elements
 
 npm install http-server
+npm install http-server -c-1
+
+cd dev/web-components/wc-roy-b1-e1/elements
+npx http-server
